@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Q02JV28J14"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-Q02JV28J14");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teodoro Assistência</title>
+    <link rel="icon" href="lib/logo-marca.png" type="image/x-icon" />
+
+    <!-- CSS Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lexend"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Lexend";
+      }
+      #text-yellow {
+        color: rgba(241, 194, 50);
+      }
+      #div-home {
+        background: linear-gradient(
+            rgba(224, 168, 14, 0.5),
+            rgba(224, 168, 14, 0.5)
+          ),
+          url("lib/bg-home.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+      }
+      #div-sobre {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("lib/bg-home.jpg");
+      }
+
+      #depoimentos {
+        /*  min-height: 100vh;  Altura da div principal */
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url("lib/depoimentos.png");
+        /*background-image: url("depoimentos.png");  Caminho da imagem de fundo */
+        background-attachment: fixed;
+        background-size: cover; /* Ajusta o tamanho da imagem */
+        background-position: center; /* Centraliza a imagem */
+      }
+      h1 {
+        font-size: 72px;
+      }
+      @media screen and (max-width: 850px) {
+        #dicas {
+          flex-wrap: wrap;
+        }
+        #home {
+          flex-wrap: wrap;
+          flex-direction: column;
+        }
+        h1 {
+          font-size: 50px;
+        }
+      }
+      @media screen and (max-width: 700px) {
+        #guincho {
+          min-width: 80%;
+        }
+      }
+
+      @media (max-width: 850px) {
+        #imagem {
+          max-width: 300px; /* Limita o tamanho máximo da imagem a 300px */
+        }
+      }
+      a:visited {
+        color: black; /* Aqui você pode definir a cor desejada para os links visitados */
+        text-decoration: none; /* remove sublinhado */
+      }
+      a {
+        text-decoration: none;
+        cursor: pointer;
+        color: black;
+      }
+      .whatsapp-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+      }
+
+      .whatsapp-button img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header
+      class="d-flex justify-content-left align-items-center header fixed-top bg-dark py-3"
+    >
+      <div class="d-flex justify-content-left align-items-center" id="marca">
+        <!-- Logo -->
+        <img
+          src="lib/logo-marca.png"
+          class="header-logo mx-3"
+          style="height: 30px; width: 30 px"
+        />
+
+        <!-- Nome da Empresa -->
+        <h3 class="text-light">Teodoro Assistência</h3>
+      </div>
+    </header>
+    <!-- Home -->
+
+    <div
+      id="div-home"
+      class="py-5 d-flex justify-content-center align-items-center"
+      style="min-height: 90vh"
+      id="div-home"
+    >
+      <div class="d-flex justify-content-center align-items-center" id="home">
+        <div class="d-flex flex-column p-5" id="texto-home">
+          <h1>
+            <strong style="color: black">ONDE VOCÊ PRECISAR</strong>
+          </h1>
+          <h3 style="color: black">
+            <strong>A MELHOR SOLUÇÃO PARA VOCÊ</strong>
+          </h3>
+          <h4 style="color: black">Chame um guincho já!</h4>
+        </div>
+
+        <div
+          class="d-flex flex-column justify-content-center align-items-center"
+        >
+          <img src="lib/logo-marca.png" id="imagem" style="max-width: 300px" />
+          <a
+            href="https://api.whatsapp.com/send?phone=5512991819146&text=Ol%C3%A1!%20Vim%20pelo%20seu%20site.%20Gostaria%20de%20realizar%20uma%20solicita%C3%A7%C3%A3o%20de%20assist%C3%AAncia."
+            ><img src="lib/contato.png" id="imagem" style="max-width: 300px"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sobre nós -->
+    <div id="div-sobre" class="container-fluid bg-dark py-5" id="sobre">
+      <div class="d-flex flex-column justify-content-center">
+        <div class="d-flex justify-content-center my-3">
+          <img
+            src="lib/guincho.png"
+            class="img-fluid"
+            style="max-width: 50vw"
+            id="guincho"
+          />
+        </div>
+        <div class="d-flex justify-content-center my-3">
+          <h1 class="text-white text-center">
+            <strong id="text-yellow">Sobre nós</strong>
+          </h1>
+        </div>
+        <div class="d-flex justify-content-center text-white text-center">
+          <p class="d-flex justify-content-center w-75">
+            Somos especialistas em serviços de guincho e assistência rodoviária,
+            prontos para atender você 24 horas por dia e 7 dias por semana. Com
+            equipe experiente e equipamentos modernos, garantimos ajuda rápida e
+            confiável. Conte conosco para resolver suas emergências na estrada
+            com eficiência e satisfação garantida. Entre em contato agora mesmo
+            para uma experiência tranquila e segura.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Serviços -->
+    <div
+      class="container-fluid py-3"
+      style="background-color: rgba(241, 194, 50)"
+      id="servicos"
+    >
+      <div class="d-flex flex-column justify-content-center my-">
+        <div class="d-flex justify-content-center">
+          <h1 class="text-center text-dark">
+            <strong>Serviços</strong>
+          </h1>
+        </div>
+        <div class="d-flex justify-content-center flex-wrap">
+          <div class="card shadow-lg m-3" style="width: 18rem">
+            <img
+              src="lib/bg-home.jpg"
+              class="card-img-top"
+              style="width: 100%; height: 250px"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">
+                <strong>Reboque de emergência</strong>
+              </h5>
+              <p class="card-text text-center">
+                Transporte seguro do veículo com problemas mecânicos para uma
+                oficina ou local seguro.
+              </p>
+            </div>
+          </div>
+          <div class="card shadow-lg m-3" style="width: 18rem">
+            <img
+              src="lib/troca de pneus.jpg"
+              class="card-img-top"
+              style="width: 100%; height: 250px"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">
+                <strong>Troca de Pneus</strong>
+              </h5>
+              <p class="card-text text-center">
+                Serviço de substituição do pneu furado por um sobressalente,
+                proporcionando mais segurança aos motoristas.
+              </p>
+            </div>
+          </div>
+          <div class="card shadow-lg m-3" style="width: 18rem">
+            <img
+              src="lib/bateria.jpg"
+              class="card-img-top"
+              style="width: 100%; height: 250px"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">
+                <strong>Recarga de Baterias</strong>
+              </h5>
+              <p class="card-text text-center">
+                Fornecimento de energia para recarregar a bateria do veículo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Depoimentos-->
+    <div id="depoimentos" class="p-3">
+      <div class="d-flex">
+        <h1 class="text-white">
+          <strong>Depoimentos</strong>
+        </h1>
+      </div>
+      <div class="text-white">
+        <p class="">
+          Ana Silva<br />
+          "Estava dirigindo para o trabalho quando meu carro começou a fazer um
+          barulho estranho e, em seguida, parou de funcionar completamente. Tive
+          que ligar para um serviço de guincho para me rebocar até a oficina
+          mais próxima."
+        </p>
+      </div>
+      <div class="text-white">
+        <p class="">
+          Marcos Oliveira<br />
+          "Saí para uma viagem de fim de semana com minha família e, no meio do
+          caminho, nosso pneu estourou. Como não conseguimos trocar o pneu por
+          conta própria, chamamos um guincho para nos ajudar."
+        </p>
+      </div>
+      <div class="text-white">
+        <p class="">
+          Juliana Rodrigues<br />
+          "Depois de uma festa à noite, voltei para o estacionamento e percebi
+          que minha bateria estava completamente descarregada. Felizmente,
+          consegui chamar um guincho para me ajudar a recarregar a bateria e
+          voltar para casa."
+        </p>
+      </div>
+    </div>
+
+    <!-- Dicas de Transito -->
+    <div
+      class="d-flex justify-content-center algin-items-center"
+      style="background-color: rgba(241, 194, 50)"
+      id="dicas"
+    >
+      <div class="mx-3">
+        <div class="pt-5">
+          <h1 class="text-dark">
+            <strong style="color: black">Dicas de trânsito</strong>
+          </h1>
+        </div>
+        <div class="my-3" style="color: black">
+          <div>
+            <p>
+              Após uma pane na rua, mantenha a calma e, se possível, mova seu
+              veículo para um local seguro. Ligue o pisca-alerta para sinalizar
+              sua posição. Em seguida, verifique se há danos visíveis ou se é
+              possível identificar a causa da pane. Se necessário, chame
+              assistência técnica ou reboque. Evite tentativas de conserto por
+              conta própria para não agravar o problema.
+            </p>
+          </div>
+          <div class="d-flex justify-content-center mt-5">
+            <div
+              class="btn btn-dark"
+              href="https://www.kovi.com.br/blog/como-agir-em-pane-no-transito#:~:text=V%C3%A1rios%20fatores%20podem%20causar%20uma,fazer%20em%20caso%20de%20pane%3F"
+              style="background-color: black; width: 100%"
+            >
+              Saiba mais
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-3 d-flex justify-content-center algin-items-center">
+        <img class="rounded img-fluid" src="lib/help.jpg" id="ajuda" />
+      </div>
+    </div>
+
+    <!-- Nos Avalie -->
+    <div
+      class="d-flex justify-content-between align-items-center flex-column py-5"
+      id="avaliacao"
+    >
+      <div class="pt-4">
+        <h4 class="text-dark text-center">
+          <strong style="color: black"
+            >Sua avaliação é importante para nós</strong
+          >
+        </h4>
+      </div>
+      <div class="my-4">
+        <img src="lib/star.svg" style="min-width: 350px" />
+      </div>
+      <div class="mb-4">
+        <div
+          class="btn btn-dark"
+          target="blank"
+          style="min-width: 300px; background-color: black"
+          href="https://g.page/r/Ce9jLoEGDKKYEB0/review"
+        >
+          Enviar Avaliação
+        </div>
+      </div>
+    </div>
+    <!-- Feed Facebook -->
+    <div id="pagina" class="pb-4">
+      <div style="height: 500px; overflow-y: auto">
+        <div id="code-embed">
+          <div class="powr-rss-feed" id="bd5955bb_1711832709"></div>
+          <script src="https://www.powr.io/powr.js?platform=google"></script>
+        </div>
+      </div>
+      <div id="fb-root"></div>
+      <script
+        async
+        defer
+        crossorigin="anonymous"
+        src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v19.0"
+        nonce="PPIPxzfM"
+      ></script>
+    </div>
+    <!-- Footer -->
+    <div class="" style="background-color: rgba(241, 194, 50)">
+      <footer class="pt-4">
+        <div class="px-3">
+          <!-- Contatos -->
+          <div class="d-flex justify-content-center">
+            <div class="py-3 w-100" style="font-size: 12px">
+              <p class="text-center" style="color: black">
+                Teodoro Assistência |
+                <a
+                  href="https://api.whatsapp.com/send?phone=5512991819146&text=Ol%C3%A1!%20Vim%20pelo%20seu%20site.%20Gostaria%20de%20realizar%20uma%20solicita%C3%A7%C3%A3o%20de%20assist%C3%AAncia."
+                  target="_blank"
+                  style="text-decoration: underline"
+                  >+55 12 99181-9146</a
+                >
+                |
+                <a
+                  href="mailto:lftransportes.corporativo@gmail.com?subject=Pergunta sobre o serviço&body=Olá, gostaria de obter mais informações sobre o serviço oferecido."
+                  target="_blank"
+                  style="text-decoration: underline"
+                  >lftransportes.corporativo@gmail.com</a
+                >
+                <br /><br />
+                <a
+                  href="https://www.google.com/maps/place/Estr.+Mun.+Prof.+Dr.+Jos%C3%A9+Lu%C3%ADs+Cembraneli,+2640+-+Jardim+Sandra+Maria,+Taubat%C3%A9+-+SP,+12081-010/@-23.0223939,-45.5247054,17z/data=!3m1!4b1!4m6!3m5!1s0x94ccf96207611daf:0xf08fe07bcd708d9e!8m2!3d-23.0223939!4d-45.5247054!16s%2Fg%2F11vkdc7tv7?entry=ttu"
+                  target="_blank"
+                  style="text-decoration: underline"
+                  >Estr. Mun. Prof. Dr. José Luís Cembraneli, 2640 - Jardim
+                  Sandra Maria, Taubaté - SP, 12081-010.</a
+                >
+              </p>
+            </div>
+            <br />
+          </div>
+          <!-- Icones Redes Sociais -->
+          <div class="d-flex justify-content-center">
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3 mx-4">
+                <a
+                  href="https://www.instagram.com/teodoro_assistencia/"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    fill="currentColor"
+                    class="bi bi-instagram"
+                    viewBox="0 0 16 16"
+                    style="color: black"
+                  >
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="ms-3">
+                <a
+                  class="link-dark mx-4"
+                  href="https://www.facebook.com/profile.php?id=100063787172260"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    fill="currentColor"
+                    class="bi bi-facebook"
+                    viewBox="0 0 16 16"
+                    style="color: black"
+                  >
+                    <path
+                      d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Botão Fale Conosco -->
+          <div class="d-flex justify-content-center pb-4">
+            <div
+              class="btn btn-dark"
+              style="width: 300px; background-color: black"
+              href="https://api.whatsapp.com/send?phone=5512991819146&text=Ol%C3%A1!%20Vim%20pelo%20seu%20site.%20Gostaria%20de%20realizar%20uma%20solicita%C3%A7%C3%A3o%20de%20assist%C3%AAncia. "
+            >
+              Fale conosco
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Safe Browsing -->
+    <div class="d-flex justify-content-center align-items-center p-3">
+      <img src="lib/safe-browsing.png" class=" " alt="" />
+    </div>
+    <!-- Termos e Condições -->
+    <div class="r p-3">
+      <div class="d-flex justify-content-center align-items-center">
+        <a
+          href="termos-e-condicoes.html"
+          target="_blank"
+          style="text-decoration: underline; font-size: 12px"
+          >Termos e Condições</a
+        >
+      </div>
+      <div class="d-flex justify-content-center align-items-center">
+        <a
+          href="politica-de-privacidade.html"
+          target="_blank"
+          style="text-decoration: underline; font-size: 12px"
+          >Politica de Privacidade</a
+        >
+      </div>
+    </div>
+    <div
+      class="d-flex flex-column flex-sm-row justify-content-center pt-4 border-top"
+    >
+      <p class="text-center" style="font-size: 12px">
+        <a
+          href="https://api.whatsapp.com/send?phone=5512992448599"
+          style="text-decoration: underline"
+          >Copyright © 2024 | Desenvolvido por Eliézer Chaves e Yago Chaves.</a
+        >
+      </p>
+    </div>
+    <!-- WhatsApp Button -->
+    <div id="whatsapp-button" class="whatsapp-button" style="z-index: 1">
+      <a
+        href="https://api.whatsapp.com/send?phone=5512991819146&text=Ol%C3%A1!%20Vim%20pelo%20seu%20site.%20Gostaria%20de%20realizar%20uma%20solicita%C3%A7%C3%A3o%20de%20assist%C3%AAncia."
+        target="_blank"
+      >
+        <img src="lib/wpp.svg" alt="WhatsApp" />
+      </a>
+    </div>
+
+    <!-- JavaScript e dependências do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Q02JV28J14"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-Q02JV28J14");
+    </script>
+  </body>
+</html>
