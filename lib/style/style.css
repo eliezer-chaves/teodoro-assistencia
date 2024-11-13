@@ -139,21 +139,23 @@ main {
     font-style: normal;
     color: var(--cor-preto);
     font-size: clamp(14px, 0.4rem + 1vw, 20px);
-    min-width: 120px;
+    min-width: 160px;
     min-height: 40px;
     width: 100%;
     /* Ocupa toda a largura disponível */
-    max-width: 180px;
+    max-width: 270px;
     /* Limita a largura a 50% do elemento pai */
-    transition: background-color 0.3s ease; /* Transição suave */
-
-
+    transition: background-color 0.3s ease;
+    /* Transição suave */
 }
 
 .main-content-cta-button:hover {
-    background-color: transparent; /* Mantém o fundo transparente */
-    color: var(--cor-amarelo); /* Muda a cor do texto para amarelo */
-    border-color: var(--cor-amarelo); /* Borda amarela */
+    background-color: transparent;
+    /* Mantém o fundo transparente */
+    color: var(--cor-amarelo);
+    /* Muda a cor do texto para amarelo */
+    border-color: var(--cor-amarelo);
+    /* Borda amarela */
 }
 
 .section-title {
@@ -167,7 +169,6 @@ main {
     align-items: center;
     justify-content: space-around;
 }
-
 .card-image {
     width: 240px;
     /* Card width */
@@ -196,10 +197,34 @@ main {
     margin-top: 5px;
     text-align: left;
     max-width: 240px;
-    /* Matches the width of the card image */
-
+    min-height: 130px;
+    
+}
+.button-cards{
+    background-color: var(--cor-preto);
+    color: var(--cor-branco);
+    width: 100%;
+    border-radius: 12px;
+    font-family: "Work Sans";
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
 }
 
+.button-cards:hover{
+    color: var(--cor-preto);
+    width: 100%;
+    border-radius: 12px;
+    background-color: transparent;
+    border-color: var(--cor-preto);
+    font-family: "Work Sans";
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.3);
+}
 
 /* Container principal */
 .section-contact {
@@ -261,8 +286,12 @@ main {
 }
 
 .button-contact:hover {
-    background-color: var(--cor-amarelo);
-
+    background-color: var(--cor-azul);
+    /* Mantém o fundo transparente */
+    
+    /* Muda a cor do texto para amarelo */
+    border-color: var(--cor-branco);
+    /* Borda amarela */
 }
 
 /* Ajustes na imagem */
@@ -360,4 +389,22 @@ main {
     justify-content: center;
     color: var(--cor-bege);
     font-size: clamp(15px, 0.4vw, 20px);
+}
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp-icon {
+    width: 50px;
+    height: auto;
+ 
 }
