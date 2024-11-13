@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,600;1,600&display=swap');
+
+:root {
+    --cor-amarelo: #F5C754;
+    --cor-preto: #141C24;
+    --cor-branco: #FFFFFF;
+    --cor-azul: #405473;
+    --cor-bege: #8A8A61;
+    --cor-branco-translucido: rgba(255, 255, 255, 0.75);
+}
+
+
+/* Variantes de peso */
+.montserrat-regular {
+    font-family: 'Montserrat';
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.montserrat-medium {
+    font-family: 'Montserrat';
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.montserrat-black {
+    font-family: 'Montserrat';
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 900;
+}
+
+.montserrat-bold {
+    font-family: 'Montserrat';
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.work-sans-semi-bold {
+    font-family: "Work Sans";
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.work-sans-bold {
+    font-family: "Work Sans";
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.work-sans-medium {
+    font-family: "Work Sans";
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.work-sans-regular {
+    font-family: "Work Sans";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--cor-branco);
+}
+
+.site-header {
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    background-color: var(--cor-branco-translucido);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Leve sombra */
+    z-index: 1000;
+    /* Sobrepõe aos demais elementos */
+    display: flex;
+
+    align-items: center;
+}
+
+.header-title {
+    font-size: clamp(15px, 1.2vw, 20px);
+    /* Tamanho mínimo de 15px, ajustável */
+    color: var(--cor-preto);
+    margin: 0;
+}
+
+.header-icon {
+    width: 20px;
+    /* Ajuste conforme necessário */
+    height: auto;
+    margin-right: 10px;
+}
+
+
+main {
+    height: 100vh;
+    /* Ocupa 100% da altura da viewport */
+    background-image: url('../img/guincho.webp');
+    /* Define a imagem de fundo */
+    background-size: cover;
+    /* Faz a imagem cobrir toda a área, ajustando-se às proporções */
+    background-position: center;
+    /* Centraliza a imagem vertical e horizontalmente */
+    display: flex;
+    /* Permite centralizar o conteúdo dentro da main */
+    justify-content: left;
+    align-items: center;
+}
+
+.main-content-text {
+    color: var(--cor-branco);
+}
+
+.main-content-text-title {
+    font-size: clamp(34px, 4vw + 1rem, 64px);
+}
+
+.main-content-text-description {
+    font-size: clamp(14px, 0.4rem + 1vw, 20px);
+
+}
+
+.main-content-cta-button {
+    background-color: var(--cor-amarelo);
+    border-radius: 12px;
+    font-family: "Work Sans";
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--cor-preto);
+    font-size: clamp(14px, 0.4rem + 1vw, 20px);
+    min-width: 120px;
+    min-height: 40px;
+    width: 100%;
+    /* Ocupa toda a largura disponível */
+    max-width: 180px;
+    /* Limita a largura a 50% do elemento pai */
+    transition: background-color 0.3s ease; /* Transição suave */
+
+
+}
+
+.main-content-cta-button:hover {
+    background-color: transparent; /* Mantém o fundo transparente */
+    color: var(--cor-amarelo); /* Muda a cor do texto para amarelo */
+    border-color: var(--cor-amarelo); /* Borda amarela */
+}
+
+.section-title {
+    color: var(--cor-preto);
+    font-size: clamp(22px, 2vw + 1rem, 32px)
+}
+
+.section-services-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-image {
+    width: 240px;
+    /* Card width */
+    height: 135px;
+    /* Card height */
+    border-radius: 12px;
+    /* Rounded corners */
+    background-size: cover;
+    /* Ensures image covers entire card */
+    background-position: center;
+    /* Centers the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra suave */
+}
+
+.card-title {
+    color: var(--cor-preto);
+    font-size: clamp(16px, 1.2vw, 24px);
+    margin-top: 10px;
+    text-align: left;
+}
+
+.card-description {
+    color: var(--cor-bege);
+    font-size: clamp(14px, 1vw, 20px);
+    margin-top: 5px;
+    text-align: left;
+    max-width: 240px;
+    /* Matches the width of the card image */
+
+}
+
+
+/* Container principal */
+.section-contact {
+    display: flex;
+    justify-content: center;
+    /* Centraliza o conteúdo horizontalmente */
+    align-items: center;
+    /* Centraliza o conteúdo verticalmente */
+    gap: 50px;
+    /* Espaço maior entre a imagem e as informações de contato */
+
+}
+
+/* Informações de contato */
+.section-contact-data {
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* Espaço igual entre os itens */
+}
+
+/* Estilos dos itens dentro das informações de contato */
+.section-contact-data-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Alinha os itens no centro */
+    margin-bottom: 15px;
+    /* Aumenta o espaço entre os itens */
+}
+
+/* Alinha os textos e ícones ao lado oposto da div */
+.section-contact-data-item-type {
+    color: var(--cor-preto);
+}
+
+.section-contact-data-item-info {
+    color: var(--cor-azul);
+}
+
+/* Ícone das informações de contato */
+.section-contact-data-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-contact {
+    background-color: var(--cor-amarelo);
+    border-radius: 12px;
+    font-family: "Work Sans";
+    font-optical-sizing: auto;
+    font-weight: 900;
+    color: var(--cor-preto);
+    font-size: clamp(14px, 20px);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    min-height: 40px;
+}
+
+.button-contact:hover {
+    background-color: var(--cor-amarelo);
+
+}
+
+/* Ajustes na imagem */
+.section-contact-image iframe {
+    width: 380px;
+    height: 280px;
+    object-fit: cover;
+    background-position: center;
+
+    background-size: cover;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Esconde a imagem em telas menores que 850px */
+@media (max-width: 850px) {
+    .section-contact-image {
+        display: none;
+        /* Remove a imagem em telas menores */
+    }
+
+    /* Centraliza as informações de contato em telas menores */
+    .section-contact {
+        flex-direction: column;
+        /* Organiza as seções em coluna */
+        gap: 20px;
+        /* Adiciona um pequeno espaço entre as seções */
+    }
+}
+
+/* Estilo geral da div */
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    /* Empilha os links em telas menores */
+    align-items: center;
+    /* Centraliza os links */
+    justify-content: center;
+    gap: 15px;
+    /* Espaçamento entre os links */
+    text-align: center;
+}
+
+/* Estilo dos links */
+.footer-link {
+    text-decoration: none;
+    color: var(--cor-bege);
+    /* Defina a cor do texto como desejado */
+    font-size: clamp(10px, 14px, 14px);
+    margin-top: 40px;
+}
+
+/* Responsividade para telas maiores que 768px */
+@media (min-width: 768px) {
+    .footer-links {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        margin-top: 30px;
+    }
+}
+
+/* Estilo da div que contém os ícones */
+.social-medias {
+    display: flex;
+    /* Usa Flexbox para centralizar os itens */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    gap: 50px;
+    /* Espaço entre os ícones */
+    padding: 20px 0;
+    /* Adiciona um pouco de espaço acima e abaixo */
+}
+
+/* Estilo dos ícones de redes sociais */
+.social-media-icon img {
+
+    object-fit: cover;
+    /* Garante que os ícones se ajustem sem distorcer */
+    transition: transform 0.3s ease-in-out;
+    /* Animação de efeito de hover */
+    color: var(--cor-bege);
+}
+
+/* Efeito de hover nos ícones */
+.social-media-icon:hover img {
+    transform: scale(1.2);
+    /* Aumenta ligeiramente o tamanho do ícone ao passar o mouse */
+}
+
+.company-name {
+    display: flex;
+    justify-content: center;
+    color: var(--cor-bege);
+    font-size: clamp(15px, 0.4vw, 20px);
+}
