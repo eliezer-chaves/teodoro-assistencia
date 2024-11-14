@@ -11,9 +11,10 @@ Este projeto foi desenvolvido utilizando HTML, CSS, Bootstrap 5, e JavaScript. O
 Tecnologias:
 
 HTML5
-CSS3 (estilos personalizados)
-Bootstrap 5
-JavaScript
-Fontes: Montserrat e Work Sans
+CSS3 (estilos personalizados);
+
+Bootstrap 5;
+
+JavaScript;
 
 ![Page]('lib/img/image.jpg')
