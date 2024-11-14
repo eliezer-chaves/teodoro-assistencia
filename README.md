@@ -17,4 +17,4 @@ Bootstrap 5;
 
 JavaScript;
 
-![Page]('lib/img/image.jpg')
+![Page](lib/img/image.png)
