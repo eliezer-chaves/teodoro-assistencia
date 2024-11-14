@@ -166,8 +166,12 @@ main {
 .section-services-cards {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-around;
+}
+.section-services-cards-card{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
 }
 .card-image {
     width: 240px;
@@ -197,7 +201,7 @@ main {
     margin-top: 5px;
     text-align: left;
     max-width: 240px;
-    min-height: 130px;
+    
     
 }
 .button-cards{
