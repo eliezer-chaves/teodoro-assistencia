@@ -1,4 +1,5 @@
 Teodoro Assistência | Guincho 24h - Website
+
 Este é o site oficial da Teodoro Assistência, especializado em serviços de guincho 24 horas. O site oferece informações detalhadas sobre os serviços de emergência disponíveis, incluindo reboque de veículos, troca de pneus, recarga de bateria e serviço de táxi, tudo com a garantia de rapidez e segurança.
 
 Funcionalidades:
